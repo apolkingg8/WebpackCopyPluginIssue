@@ -19,6 +19,7 @@ jobs:
       - run: yarn pack
         env:
           NODE_ENV: production
+      - run: ls ./packed
 
   mac:
     runs-on: macos-latest
@@ -32,6 +33,7 @@ jobs:
       - run: yarn pack
         env:
           NODE_ENV: production
+      - run: ls ./packed
 
   linux:
     runs-on: ubuntu-latest
@@ -45,3 +47,4 @@ jobs:
       - run: yarn pack
         env:
           NODE_ENV: production
+      - run: ls ./packed
